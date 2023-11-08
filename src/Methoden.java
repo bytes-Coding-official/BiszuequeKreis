@@ -24,49 +24,49 @@ public class Methoden {
     public static void main(String[] args) {
         double radiusDouble = 5.00;
         int radiusInt = 5;
-        System.out.println("Radius = %10.2f mm.\n" + radiusDouble);
-        System.out.println("Umfang = %10.2f mm.\n" + berechneUmfang(radiusDouble));
-        System.out.println("Flaeche = %10.2f mm.^2\n" + berechneFlaeche(radiusDouble));
+        System.out.printf("Radius = %10.2f mm.\n", radiusDouble);
+        System.out.printf("Umfang = %10.2f mm.\n", berechneUmfang(radiusDouble));
+        System.out.printf("Flaeche = %10.2f mm².\n", berechneFlaeche(radiusDouble));
         radiusDouble = -5.00;
-        System.out.println("Radius = %10.2f mm.\n" + radiusDouble);
-        System.out.println("Umfang = %10.2f mm.\n" + berechneUmfang(radiusDouble));
-        System.out.println("Flaeche = %10.2f mm.^2\n" + berechneFlaeche(radiusDouble));
+        System.out.printf("Radius = %10.2f mm.\n", radiusDouble);
+        System.out.printf("Umfang = %10.2f mm.\n", berechneUmfang(radiusDouble));
+        System.out.printf("Flaeche = %10.2f mm².\n", berechneFlaeche(radiusDouble));
 
         //Test mit Pixeln
-        System.out.println("Radius = %10.2f px.\n" + radiusInt);
-        System.out.println("Umfang = %10.2f px.\n" + berechneUmfang(radiusInt));
-        System.out.println("Flaeche = %10.2f px.^2\n" + berechneFlaeche(radiusInt));
+        System.out.printf("Radius = %10d px.\n", radiusInt);
+        System.out.printf("Umfang = %10.2f px.\n", berechneUmfang(radiusInt));
+        System.out.printf("Flaeche = %10.2f px².\n", berechneFlaeche(radiusInt));
         radiusInt = -5;
-        System.out.println("Radius = %10.2f px.\n" + radiusInt);
-        System.out.println("Umfang = %10.2f px.\n" + berechneUmfang(radiusInt));
-        System.out.println("Flaeche = %10.2f px.^2\n" + berechneFlaeche(radiusInt));
+        System.out.printf("Radius = %10d px.\n", radiusInt);
+        System.out.printf("Umfang = %10.2f px.\n", berechneUmfang(radiusInt));
+        System.out.printf("Flaeche = %10.2f px².\n", berechneFlaeche(radiusInt));
 
         // Test Kreisberechnung int
         radiusDouble = 5.00;
-        System.out.println("Radius = %10d px.\n" + radiusDouble);
-        System.out.println("Umfang = %10d px.\n" + berechneUmfang(radiusDouble));
-        System.out.println("Flaeche = %10d px.^2\n" + berechneFlaeche(radiusDouble));
+        System.out.printf("Radius = %10.2f px.\n", radiusDouble);
+        System.out.printf("Umfang = %10.2f px.\n", berechneUmfang(radiusDouble));
+        System.out.printf("Flaeche = %10.2f px².\n", berechneFlaeche(radiusDouble));
         radiusDouble = -5;
-        System.out.println("Radius = %10d px.\n" + radiusDouble);
-        System.out.println("Umfang = %10d px.\n" + berechneUmfang(radiusDouble));
-        System.out.println("Flaeche = %10d px.^2\n" + berechneFlaeche(radiusDouble));
+        System.out.printf("Radius = %10.2f px.\n", radiusDouble);
+        System.out.printf("Umfang = %10.2f px.\n", berechneUmfang(radiusDouble));
+        System.out.printf("Flaeche = %10.2f px².\n", berechneFlaeche(radiusDouble));
 
         double umfang, flaeche;
         radiusDouble = 5.00;
         umfang = 2.0 * PI * radiusDouble;
         flaeche = PI * radiusDouble * radiusDouble;
-        System.out.print("Radius: ");
+        System.out.println("Radius: ");
         System.out.println(radiusDouble);
-        System.out.print("Umfang: ");
+        System.out.println("Umfang: ");
         System.out.println(umfang);
-        System.out.print("Flaeche: ");
+        System.out.println("Flaeche: ");
         System.out.println(flaeche);
         radiusDouble = -5.00;
-        System.out.print("Radius: ");
+        System.out.println("Radius: ");
         System.out.println(radiusDouble);
-        System.out.print("Umfang: ");
+        System.out.println("Umfang: ");
         System.out.println(umfang);
-        System.out.print("Flaeche: ");
+        System.out.println("Flaeche: ");
         System.out.println(flaeche);
     }
 }
